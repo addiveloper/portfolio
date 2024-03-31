@@ -1,0 +1,57 @@
+---
+import Download from "./icons/Download.astro";
+---
+
+<header
+  class="fixed top-0 right-0 left-0 md:mt-4 px-4 bg-primary/5 md:rounded-xl backdrop-blur-md z-50 h-16 lg:max-w-6xl md:max-w-2xl md:mx-auto w-full flex gap-8 justify-center py-4 md:text-sm text-xs"
+>
+  <div class="hidden md:flex flex-grow basis-0 items-center">
+    <a href="/" class="hover:text-primary transition"> @addiveloper</a>
+  </div>
+
+  <ul class="flex justify-center items-center gap-8">
+    <li>
+      <a
+        href="#home"
+        class="opacity-70 hover:opacity-100 hover:text-white transition">home</a
+      >
+    </li>
+    <li>
+      <a
+        href="#experience"
+        class="opacity-70 hover:opacity-100 hover:text-white transition"
+        >experience</a
+      >
+    </li>
+    <li>
+      <a
+        href="#projects"
+        class="opacity-70 hover:opacity-100 hover:text-white transition"
+        >projects</a
+      >
+    </li>
+    <li>
+      <a
+        href="#technologies"
+        class="opacity-70 hover:opacity-100 hover:text-white transition"
+        >technologies</a
+      >
+    </li>
+  </ul>
+  <div class="hidden md:flex flex-grow basis-0 justify-end items-center">
+    <div class="group">
+      <button
+        class="hidden lg:flex gap-2 items-center justify-center p-2 px-4 bg-primary text-black text-xs font-medium rounded-lg group-hover:translate-y-[-0.15rem] transition"
+      >
+        <Download />
+        Download CV
+      </button>
+      <button
+        class="lg:hidden flex gap-2 items-center justify-center p-2 px-4 bg-primary text-black text-xs font-medium rounded-lg group-hover:translate-y-[-0.15rem] transition"
+      >
+        <Download />
+        CV
+      </button>
+    </div>
+  </div>
+</header>

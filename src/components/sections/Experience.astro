@@ -1,0 +1,68 @@
+---
+import { Image } from "astro:assets";
+---
+
+<section
+  class="flex flex-col justify-center items-center mt-24 w-full"
+  id="experience"
+>
+  <h1 class="text-4xl font-bold">Experience</h1>
+  <p class="text-sm opacity-60 mt-2 mb-12 text-center text-pretty">
+    Here are some projects I've worked as freelance.
+  </p>
+  <section
+    class="w-full grid lg:grid-cols-6 md:grid-cols-4 grid-cols-2 auto-rows-[176px] gap-4"
+  >
+    <a
+      href="https://store-cremastereo-dev.vercel.app"
+      target="_blank"
+      class="relative group lg:col-span-6 md:col-span-4 col-span-2 row-span-2 md:row-span-2 bg-[#1C1E23] rounded-2xl md:p-8 p-6 flex justify-between overflow-clip cursor-pointer group-hover:backdrop-blur-md hover:bg-secondary/30 transition-all duration-300"
+    >
+      <div class="flex flex-col flex-1 md:justify-between">
+        <div>
+          <h2 class="md:text-6xl text-4xl font-bold">Crema Stereo</h2>
+          <p class="opacity-60 mt-4 md:text-base text-xs max-w-lg text-pretty">
+            A vibrant e-commerce platform (React & Astro) showcasing their
+            unique popsicles and a user-friendly CMS (Next.js & NextAuth) for
+            content control.
+          </p>
+        </div>
+
+        <div class="flex gap-4 items-center mt-4 flex-wrap">
+          <p class="text-xs border-accent border py-1 px-3 rounded-lg">Astro</p>
+          <p class="text-xs border-accent border py-1 px-3 rounded-lg">
+            Next.js
+          </p>
+          <p class="text-xs border-accent border py-1 px-3 rounded-lg">React</p>
+          <p class="text-xs border-accent border py-1 px-3 rounded-lg">
+            TypeScript
+          </p>
+          <p class="text-xs border-accent border py-1 px-3 rounded-lg">
+            TailwindCSS
+          </p>
+          <p class="text-xs border-accent border py-1 px-3 rounded-lg">
+            Zustand
+          </p>
+        </div>
+      </div>
+      <div
+        class="absolute md:block hidden w-72 h-72 -right-24 -top-12 bg-primary rounded-[50%]"
+      >
+      </div>
+      <Image
+        src="/cremastereo.png"
+        alt="Crema Stereo Web"
+        width={675}
+        height={1200}
+        class="w-96 absolute z-[1] -right-24 bottom-[-450px] md:-bottom-96 group-hover:scale-105 group-hover:-translate-x-5 transition duration-300"
+      />
+      <Image
+        src="/admin.png"
+        alt="Crema Stereo Web"
+        width={960}
+        height={540}
+        class="md:h-80 h-52 w-auto absolute right-14 md:-right-16 md:-bottom-32 -bottom-12 group-hover:scale-105 group-hover:-translate-x-5 transition duration-300"
+      />
+    </a>
+  </section>
+</section>

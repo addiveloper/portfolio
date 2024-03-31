@@ -1,0 +1,65 @@
+---
+import { HomeFramer } from "../framer/HomeFramer";
+import AtSign from "../icons/AtSign.astro";
+import Github from "../icons/Github.astro";
+import Linkedin from "../icons/Linkedin.astro";
+---
+
+<section
+  id="home"
+  class="w-full h-full md:pt-32 pt-24 grid grid-cols-2 lg:grid-cols-6 md:grid-cols-4 lg:auto-rows-[176px] gap-4"
+>
+  <HomeFramer client:visible>
+    <div class="flex flex-col flex-1 justify-end">
+      <p class="opacity-60 z-10 md:text-base text-sm mix-blend-difference">
+        I'm addiveloper
+      </p>
+      <h1 class="md:text-6xl text-4xl font-bold z-10 mix-blend-difference">
+        Miguel Díaz
+      </h1>
+      <div class="flex gap-4 mt-8 text-xs font-medium">
+        <div class="group z-10">
+          <a
+            href="https://github.com/addiveloper"
+            class="bg-primary text-[#000] px-4 py-1.5 rounded-md flex items-center justify-center gap-1 group-hover:translate-y-[-0.15rem] transition antialiased"
+          >
+            <Github />
+            Github
+          </a>
+        </div>
+        <div class="group z-10">
+          <a
+            href="https://github.com/addiveloper"
+            class="bg-primary text-[#000] px-4 py-1.5 rounded-md flex justify-center items-center gap-1 group-hover:translate-y-[-0.15rem] transition antialiased"
+          >
+            <AtSign />
+            Email
+          </a>
+        </div>
+        <div class="group z-10">
+          <a
+            href="https://github.com/addiveloper"
+            class="bg-primary text-[#000] px-4 py-1.5 rounded-md flex justify-center items-center gap-1 group-hover:translate-y-[-0.15rem] transition antialiased"
+          >
+            <Linkedin />
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </HomeFramer>
+  <article class="col-span-2 bg-[#1C1E23] rounded-2xl md:p-8 p-6">
+    <h2 class="md:text-xl font-medium">About Me</h2>
+    <p class="md:text-sm text-xs opacity-60 mt-2 text-pretty leading-5">
+      Web developer. In love with Astro and React. 💚
+    </p>
+  </article>
+  <article
+    class="bg-[#1C1E23] rounded-2xl md:p-8 p-6 flex items-center justify-center"
+  >
+    <p>English</p>
+  </article>
+  <article class="bg-secondary rounded-2xl flex justify-center items-center">
+    <p class="text-sm z-10">Caracas, VE</p>
+  </article>
+</section>

@@ -1,0 +1,56 @@
+---
+import { Image } from "astro:assets";
+---
+
+<section
+  class="flex flex-col w-full justify-center items-center mt-24"
+  id="projects"
+>
+  <h1 class="text-4xl font-bold">Projects</h1>
+  <p class="text-sm opacity-60 mt-2 mb-12 text-pretty text-center">
+    Here are some projects I've worked on in the past few years.
+  </p>
+  <section
+    class="w-full grid lg:grid-cols-6 md:grid-cols-4 grid-cols-2 auto-rows-[176px] gap-4"
+  >
+    <a
+      href="https://addiweather.vercel.app/"
+      target="_blank"
+      class="relative group lg:col-span-6 md:col-span-4 col-span-2 row-span-2 bg-[#1C1E23] rounded-2xl p-6 md:p-8 flex justify-between overflow-clip cursor-pointer group-hover:backdrop-blur-md hover:bg-secondary/30 transition-all duration-300"
+    >
+      <div class="flex flex-col flex-1 md:justify-between">
+        <div>
+          <h2 class="md:text-6xl text-4xl font-bold">AddiWeather</h2>
+          <p class="opacity-60 mt-2 md:text-base max-w-lg text-pretty text-xs">
+            A beautiful bento-style weather app built with Next.js delivers
+            detailed local weather data, forecast information, and more.
+          </p>
+        </div>
+
+        <div class="flex gap-4 items-center mt-4 flex-wrap">
+          <p class="text-xs border-accent border py-1 px-3 rounded-lg">
+            Next.js
+          </p>
+          <p class="text-xs border-accent border py-1 px-3 rounded-lg">React</p>
+          <p class="text-xs border-accent border py-1 px-3 rounded-lg">
+            TypeScript
+          </p>
+          <p class="text-xs border-accent border py-1 px-3 rounded-lg">
+            TailwindCSS
+          </p>
+        </div>
+      </div>
+      <div
+        class="absolute md:block hidden w-72 h-72 -right-24 -top-12 bg-primary rounded-[50%]"
+      >
+      </div>
+      <Image
+        src="/clima.png"
+        alt="Crema Stereo Web"
+        width={960}
+        height={540}
+        class="md:w-auto md:h-80 h-auto w-full absolute z-[1] -right-10 sm:-bottom-32 -bottom-16 md:-right-32 md:-bottom-24 group-hover:scale-105 group-hover:-translate-x-5 transition duration-300"
+      />
+    </a>
+  </section>
+</section>
